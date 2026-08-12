@@ -1,0 +1,33 @@
+<div class="relationship-tracker">
+  <header class="relationship-tracker-header">
+    <h3><i class="fas fa-heart"></i> {{localize "RELTRACK.Header"}}</h3>
+    <a class="relationship-add"><i class="fas fa-plus"></i> {{localize "RELTRACK.AddNPC"}}</a>
+  </header>
+
+  <p class="relationship-hint">{{localize "RELTRACK.Hint"}}</p>
+
+  <ol class="relationship-list">
+    {{#each relationships as |rel|}}
+    <li class="relationship-entry" data-relationship-id="{{rel.id}}" data-actor-uuid="{{rel.actorUuid}}">
+      <img class="relationship-img" src="{{rel.img}}" title="{{rel.name}}" />
+      <div class="relationship-info">
+        <div class="relationship-name-row">
+          <span class="relationship-name">{{rel.name}}</span>
+          <a class="relationship-delete" title="Remove"><i class="fas fa-trash"></i></a>
+        </div>
+        <div class="relationship-level-row">
+          <a class="relationship-level-down" title="Decrease"><i class="fas fa-minus-circle"></i></a>
+          <div class="relationship-level-track">
+            <div class="relationship-level-fill" style="width:{{rel.levelPercent}}%"></div>
+          </div>
+          <span class="relationship-level-label">{{rel.levelLabel}}</span>
+          <a class="relationship-level-up" title="Increase"><i class="fas fa-plus-circle"></i></a>
+        </div>
+        <textarea class="relationship-notes" placeholder="{{localize 'RELTRACK.NotesPlaceholder'}}">{{rel.notes}}</textarea>
+      </div>
+    </li>
+    {{else}}
+    <li class="relationship-empty">{{localize "RELTRACK.Empty"}}</li>
+    {{/each}}
+  </ol>
+</div>

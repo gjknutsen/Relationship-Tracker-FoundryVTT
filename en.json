@@ -1,0 +1,21 @@
+{
+  "RELTRACK.TabLabel": "Relationships",
+  "RELTRACK.Header": "NPC Relationships",
+  "RELTRACK.AddNPC": "Add NPC",
+  "RELTRACK.Hint": "Drag an NPC actor here from the sidebar, or click \"Add NPC\" to add one manually.",
+  "RELTRACK.Empty": "No relationships tracked yet.",
+  "RELTRACK.NotesPlaceholder": "Notes...",
+  "RELTRACK.DialogTitle": "Add Relationship",
+  "RELTRACK.DialogName": "Name",
+  "RELTRACK.DialogImage": "Image Path",
+  "RELTRACK.DialogAdd": "Add",
+  "RELTRACK.DialogCancel": "Cancel",
+  "RELTRACK.DeleteConfirmTitle": "Remove Relationship",
+  "RELTRACK.DeleteConfirmBody": "Remove {name} from this character's relationships? This cannot be undone.",
+  "RELTRACK.Level.0": "Hostile",
+  "RELTRACK.Level.1": "Unfriendly",
+  "RELTRACK.Level.2": "Neutral",
+  "RELTRACK.Level.3": "Friendly",
+  "RELTRACK.Level.4": "Ally",
+  "RELTRACK.Level.5": "Devoted"
+}

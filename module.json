@@ -1,0 +1,34 @@
+{
+  "id": "relationship-tracker",
+  "title": "Relationship Tracker",
+  "description": "Adds a tab to character sheets for tracking relationship levels with NPCs. Link NPC actors via drag-and-drop or add them manually, track a relationship level, and keep freeform notes.",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "13",
+    "maximum": "13"
+  },
+  "authors": [
+    {
+      "name": "Your Name"
+    }
+  ],
+  "esmodules": [
+    "scripts/relationship-tracker.js"
+  ],
+  "styles": [
+    "styles/relationship-tracker.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "url": "",
+  "manifest": "",
+  "download": "",
+  "readme": "README.md",
+  "license": "LICENSE"
+}
