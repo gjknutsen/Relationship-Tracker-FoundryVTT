@@ -13,17 +13,17 @@
       "name": "Your Name"
     }
   ],
-  "esmodules": [
-    "scripts/relationship-tracker.js"
+"esmodules": [
+    "relationship-tracker.js"
   ],
   "styles": [
-    "styles/relationship-tracker.css"
+    "relationship-tracker.css"
   ],
-  "languages": [
+"languages": [
     {
       "lang": "en",
       "name": "English",
-      "path": "lang/en.json"
+      "path": "en.json"
     }
   ],
   "url": "https://github.com/gjknutsen/relationship-tracker-foundryvtt",
