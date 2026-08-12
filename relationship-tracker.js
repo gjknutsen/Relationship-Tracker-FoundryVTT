@@ -29,7 +29,7 @@ function levelLabel(value) {
 
 Hooks.once("init", () => {
   console.log(`${MODULE_ID} | Initializing Relationship Tracker`);
-  loadTemplates([`modules/${MODULE_ID}/templates/relationship-tab.hbs`]);
+  loadTemplates([`modules/${MODULE_ID}/relationship-tab.hbs`]);
 });
 
 // Classic ("ApplicationV1") sheets - most pre-V13-native systems.
@@ -64,7 +64,7 @@ async function injectRelationshipTabClassic(app, html) {
   </a>`);
   tabsNav.append(tabButton);
 
-  const contentHtml = await renderTemplate(`modules/${MODULE_ID}/templates/relationship-tab.hbs`, buildTemplateContext(actor));
+  const contentHtml = await renderTemplate(`modules/${MODULE_ID}/relationship-tab.hbs`, buildTemplateContext(actor));
   const tabDiv = $(`<div class="tab relationship-tracker-tab" data-group="primary" data-tab="relationships"></div>`);
   tabDiv.html(contentHtml);
   sheetBody.append(tabDiv);
@@ -114,7 +114,7 @@ async function injectRelationshipTabV2(app, element) {
     nav.appendChild(btn);
   }
 
-  const contentHtml = await renderTemplate(`modules/${MODULE_ID}/templates/relationship-tab.hbs`, buildTemplateContext(actor));
+  const contentHtml = await renderTemplate(`modules/${MODULE_ID}/relationship-tab.hbs`, buildTemplateContext(actor));
   const section = document.createElement("section");
   section.className = "tab relationship-tracker-tab";
   section.dataset.tab = "relationships";
